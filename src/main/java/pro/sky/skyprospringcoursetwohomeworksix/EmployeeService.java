@@ -1,6 +1,22 @@
 package pro.sky.skyprospringcoursetwohomeworksix;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class EmployeeService {
+    private int count;
+
+    public void countdown() {
+        this.count++;
+    }
+
+    public int getCount() {
+        return this.count;
+    }
+
+
+
+
    /* employees[0] = new Employee("ivan1", "Ivanov", "Ivanovich", 500, 1);
     employees[1] = new Employee("ivan2", "Ivanov", "Ivanovich", 200000, 2);
     employees[2] = new Employee("ivan3", "Ivanov", "Ivanovich", 900000, 3);
